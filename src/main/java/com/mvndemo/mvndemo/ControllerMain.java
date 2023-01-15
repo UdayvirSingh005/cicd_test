@@ -13,11 +13,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/")
 public class ControllerMain {
 
-	@GetMapping("jenkins")
+	@GetMapping("get")
 	public String home() {
 		String s = null;
 		//s.length();
-		return "mvn demo";
+		return "Welcome to first jenkins app on local server!";
 	}
 
 	@ExceptionHandler({ Exception.class })
